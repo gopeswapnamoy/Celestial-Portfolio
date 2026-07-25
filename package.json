@@ -1,0 +1,61 @@
+{
+  "name": "celestial-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --webpack",
+    "build": "next build --webpack",
+    "start": "next start",
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit",
+    "format": "prettier --write .",
+    "prisma:generate": "prisma generate",
+    "db:push": "tsx prisma/setup.ts",
+    "db:setup": "tsx prisma/setup.ts",
+    "db:seed": "tsx prisma/seed.ts",
+    "db:studio": "prisma studio"
+  },
+  "dependencies": {
+    "@next/swc-win32-x64-msvc": "^16.2.9",
+    "@prisma/adapter-better-sqlite3": "^7.8.0",
+    "@prisma/client": "^7.8.0",
+    "clsx": "^2.1.1",
+    "dotenv": "^17.4.2",
+    "framer-motion": "^12.42.1",
+    "gsap": "^3.15.0",
+    "hermes-parser": "^0.25.1",
+    "lenis": "^1.3.25",
+    "lightningcss-win32-x64-msvc": "^1.32.0",
+    "lucide-react": "^1.22.0",
+    "next": "16.2.9",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "tailwind-merge": "^3.6.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.9",
+    "prettier": "^3.9.4",
+    "prisma": "^7.8.0",
+    "tailwindcss": "^4",
+    "tsx": "^4.22.4",
+    "typescript": "^5"
+  },
+  "allowScripts": {
+    "@prisma/engines@7.8.0": true,
+    "esbuild@0.28.1": true,
+    "sharp@0.34.5": true,
+    "unrs-resolver@1.12.2": true,
+    "prisma@7.8.0": true,
+    "better-sqlite3@12.11.1": true
+  },
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
+  }
+}
