@@ -30,6 +30,7 @@ const securityHeaders = [
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
+  serverExternalPackages: ["better-sqlite3", "@prisma/adapter-better-sqlite3"],
   async headers() {
     return [
       {

@@ -9,6 +9,7 @@
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
     "format": "prettier --write .",
+    "postinstall": "prisma generate",
     "prisma:generate": "prisma generate",
     "db:push": "tsx prisma/setup.ts",
     "db:setup": "tsx prisma/setup.ts",
